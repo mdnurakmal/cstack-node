@@ -7,6 +7,8 @@ RUN apk update upgrade;
 
 RUN echo node -v
 
+RUN chmod 777 /app
+
 # Create a group and user
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
