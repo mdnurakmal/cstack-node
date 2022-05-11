@@ -5,6 +5,8 @@ RUN apk update upgrade;
 
 RUN echo node -v
 
+RUN mkdir app
+
 # Create a group and user
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
